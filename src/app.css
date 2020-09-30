@@ -1,0 +1,80 @@
+#root,
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.app {
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("./images/wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    background: whitesmoke;
+    width: 40%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 2%;
+    -webkit-box-shadow: 18px 16px 10px 4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 18px 16px 10px 4px rgba(0, 0, 0, 0.75);
+    box-shadow: 18px 16px 10px 4px rgba(0, 0, 0, 0.75);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 600px;
+}
+
+button {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 150px;
+    width: 150px;
+    opacity: 1;
+    background-color: #fff;
+    border: 1px solid rgba(22, 76, 167, 0.6);
+}
+
+.button  {
+    color: #164ca7;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #164ca7;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 80%;
+        height: 30%;
+    }
+}
