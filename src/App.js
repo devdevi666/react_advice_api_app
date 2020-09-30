@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import "./app.css";
 
@@ -26,14 +26,12 @@ const App = () => {
             });
     };
 
-    useEffect(() => {
-        getAdvice();
-    }, [setAdvice]);
-
     return (
         <div className="app">
             <div className="card">
-                <h1 className="header">{advice}</h1>
+                <h1 className="header">
+                    {advice === "" ? " To get an advice press the button below." : advice}
+                </h1>
                 <button onClick={getAdvice} className="button">
                     GET ADVICE
                 </button>
