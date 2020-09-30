@@ -23,7 +23,8 @@ html {
 .card {
     background: whitesmoke;
     width: 40%;
-    height: 20%;
+    width: 40%;
+    max-height: 20%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -38,6 +39,7 @@ html {
     display: flex;
     align-items: center;
     height: 600px;
+    font-size: 2rem;
 }
 
 button {
@@ -50,7 +52,7 @@ button {
     align-items: center;
     cursor: pointer;
     text-transform: uppercase;
-    height: 150px;
+    height: 50px;
     width: 150px;
     opacity: 1;
     background-color: #fff;
@@ -72,9 +74,17 @@ button {
 
 
 
-@media only screen and (max-width: 600px) {
+@media  screen and (max-width: 600px) {
     .card {
         width: 80%;
-        height: 30%;
+        max-height: 80%;
+        background-color: rgba(255,255,255,0.3);
+    }
+
+    .header {
+        align-items: center;
+        font-size: 1.5rem;
+        color: #232529;
+        padding: 10px;
     }
 }
