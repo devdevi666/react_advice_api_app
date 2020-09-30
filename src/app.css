@@ -18,6 +18,7 @@ html {
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
 }
 
 .card {
@@ -72,6 +73,12 @@ button {
     background-color: #164ca7;
 }
 
+
+.footer{
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+}
 
 
 @media  screen and (max-width: 600px) {

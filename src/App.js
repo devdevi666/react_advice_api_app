@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Footer from './components/Footer'
 import axios from "axios";
 import "./app.css";
 
@@ -35,7 +36,9 @@ const App = () => {
                 <button onClick={getAdvice} className="button">
                     GET ADVICE
                 </button>
+               
             </div>
+            <Footer />
         </div>
     );
 };
