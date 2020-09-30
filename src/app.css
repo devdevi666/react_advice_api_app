@@ -5,7 +5,7 @@ html {
     padding: 0;
     box-sizing: border-box;
     height: 100vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .app {
@@ -22,7 +22,7 @@ html {
 }
 
 .card {
-    background: whitesmoke;
+    background: rgba(37, 37, 37, 0.9);
     width: 40%;
     width: 40%;
     max-height: 20%;
@@ -41,6 +41,7 @@ html {
     align-items: center;
     height: 600px;
     font-size: 2rem;
+    color: rgb(223, 223, 223);
 }
 
 button {
@@ -60,7 +61,7 @@ button {
     border: 1px solid rgba(22, 76, 167, 0.6);
 }
 
-.button  {
+.button {
     color: #164ca7;
     font-size: 1rem;
     font-weight: 700;
@@ -73,19 +74,17 @@ button {
     background-color: #164ca7;
 }
 
-
-.footer{
+.footer {
     position: absolute;
     bottom: 10px;
     color: #fff;
 }
 
-
-@media  screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .card {
         width: 80%;
         max-height: 80%;
-        background-color: rgba(255,255,255,0.3);
+        background-color: rgba(255, 255, 255, 0.3);
     }
 
     .header {
