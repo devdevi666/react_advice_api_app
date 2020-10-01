@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Footer from './components/Footer'
+import { motion } from "framer-motion";
+import Footer from "./components/Footer";
 import axios from "axios";
 import "./app.css";
 
@@ -28,18 +29,31 @@ const App = () => {
     };
 
     return (
-        <div className="app">
-            <div className="card">
-                <h1 className="header">
-                    {advice === "" ? " To get an advice press the button below." : advice}
-                </h1>
+        <motion.div
+            className="app"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+        >
+            <motion.div
+                className="card"
+                initial={{ y: "-100vh" }}
+                animate={{ y: 0 }}
+            >
+                <motion.h1
+                    className="header"
+                    initial={{ opacity: 0 }}
+                    animate={{opacity: 1 }}
+                >
+                    {advice === ""
+                        ? " To get an advice press the button below."
+                        : advice}
+                </motion.h1>
                 <button onClick={getAdvice} className="button">
                     GET ADVICE
                 </button>
-               
-            </div>
+            </motion.div>
             <Footer />
-        </div>
+        </motion.div>
     );
 };
 
